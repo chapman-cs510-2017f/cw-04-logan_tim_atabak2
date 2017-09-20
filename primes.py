@@ -14,8 +14,6 @@ def eratosthenes(n):
 #            |------^
     return [prime for prime, is_prime in primes.items() if is_prime]
 
-def hello_world():
-    print("hello world!")
 
 def gen_eratosthenes():
     def is_prime(pot_prime, l):
@@ -24,7 +22,6 @@ def gen_eratosthenes():
             if pot_prime % p == 0:
                 return False
         return True
-    
     primes = []
     pot_prime = 2
     while True:
